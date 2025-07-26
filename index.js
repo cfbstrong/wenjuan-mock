@@ -16,7 +16,7 @@ function getRes(fn) {
 mockList.forEach((item) => {
   const { url, method, response } = item;
   router[method](url, async (ctx) => {
-    ctx.body = getRes(response);
+    ctx.body = await getRes(response);
   });
 });
 
