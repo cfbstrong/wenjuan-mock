@@ -3,7 +3,7 @@ const Random = Mock.Random;
 
 module.exports = [
   {
-    url: "api/question/:id",
+    url: "/api/question/:id",
     method: "get",
     response() {
       return {
@@ -11,6 +11,19 @@ module.exports = [
         data: {
           id: Random.id(),
           titlt: Random.ctitle(),
+        },
+      };
+    },
+  },
+  {
+    url: "/api/question",
+    method: "post",
+    response() {
+      return {
+        errno: 0,
+        data: {
+          id: Random.id(),
+          title: Random.ctitle(),
         },
       };
     },

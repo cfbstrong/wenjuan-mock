@@ -1,7 +1,7 @@
 const Mock = require("mockjs");
 const Random = Mock.Random;
 
-const mockList = [
+module.exports = [
   {
     url: "/api/test",
     method: "get",
@@ -15,5 +15,3 @@ const mockList = [
     },
   },
 ];
-
-module.exports = mockList;
