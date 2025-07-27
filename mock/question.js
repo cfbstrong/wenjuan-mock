@@ -3,11 +3,13 @@ const Random = Mock.Random;
 
 module.exports = [
   {
+    //获取单个问卷信息
     url: "/api/question/:id",
     method: "get",
     response() {
       return {
         errno: 0,
+        // msg: "出错了",
         data: {
           id: Random.id(),
           titlt: Random.ctitle(),
@@ -16,6 +18,7 @@ module.exports = [
     },
   },
   {
+    //创建问卷
     url: "/api/question",
     method: "post",
     response() {
@@ -23,7 +26,6 @@ module.exports = [
         errno: 0,
         data: {
           id: Random.id(),
-          title: Random.ctitle(),
         },
       };
     },
