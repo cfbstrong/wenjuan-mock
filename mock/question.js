@@ -1,4 +1,5 @@
 const Mock = require("mockjs");
+const getQuestionList = require("./data/getQuestionList");
 const Random = Mock.Random;
 
 module.exports = [
@@ -26,6 +27,20 @@ module.exports = [
         errno: 0,
         data: {
           id: Random.id(),
+        },
+      };
+    },
+  },
+  //获取（查询）问卷列表
+  {
+    url: "/api/question",
+    method: "get",
+    response() {
+      return {
+        errno: 0,
+        data: {
+          list: getQuestionList(), //当前页
+          total: 100, //总条数，用于分页
         },
       };
     },
