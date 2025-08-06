@@ -53,4 +53,37 @@ module.exports = [
       };
     },
   },
+  {
+    //更新问卷
+    url: "/api/question/:id",
+    method: "patch",
+    response() {
+      return {
+        errno: 0,
+      };
+    },
+  },
+  {
+    //复制问卷
+    url: "/api/question/duplicate/:id",
+    method: "post",
+    response() {
+      return {
+        errno: 0,
+        data: {
+          id: Random.id(),
+        },
+      };
+    },
+  },
+  {
+    //批量彻底删除问卷
+    url: "/api/question",
+    method: "delete",
+    response() {
+      return {
+        errno: 0,
+      };
+    },
+  },
 ];
