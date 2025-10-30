@@ -16,6 +16,43 @@ module.exports = [
           titlt: Random.ctitle(),
           //组件列表
           componentList: [
+            {
+              fe_id: Random.id(),
+              type: "questionInfo", //不能重复，前后端统一好
+              title: "问卷描述",
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: "问卷标题", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
+                description: "这是一个问卷信息",
+              },
+            },
+            {
+              fe_id: Random.id(),
+              type: "questionRadio",
+              title: "单选标题",
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: "单选标题",
+                value: "",
+                vertical: false,
+                options: [
+                  {
+                    value: "aa",
+                    label: "选项1",
+                  },
+                  {
+                    value: "bb",
+                    label: "选项2",
+                  },
+                  {
+                    value: "cc",
+                    label: "选项3",
+                  },
+                ],
+              },
+            },
             // Title
             {
               fe_id: Random.id(),
@@ -50,6 +87,28 @@ module.exports = [
               props: {
                 title: "你的姓名", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
                 placeholder: "请输入姓名...",
+              },
+            },
+            {
+              fe_id: Random.id(),
+              type: "questionPragraph", //不能重复，前后端统一好
+              title: "段落",
+              isHidden: false,
+              isLocked: false,
+              props: {
+                text: "你的姓名", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
+                isCenter: true,
+              },
+            },
+            {
+              fe_id: Random.id(),
+              type: "questionTextarea", //不能重复，前后端统一好
+              title: "问卷描述",
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: "多行输入标题111", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
+                placeholder: "请输入内容111",
               },
             },
           ],
