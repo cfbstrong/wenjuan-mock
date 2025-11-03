@@ -39,15 +39,15 @@ module.exports = [
                 vertical: false,
                 options: [
                   {
-                    value: "aa",
+                    value: "item1",
                     label: "选项1",
                   },
                   {
-                    value: "bb",
+                    value: "item2",
                     label: "选项2",
                   },
                   {
-                    value: "cc",
+                    value: "item3",
                     label: "选项3",
                   },
                 ],
@@ -103,7 +103,7 @@ module.exports = [
             {
               fe_id: Random.id(),
               type: "questionTextarea", //不能重复，前后端统一好
-              title: "问卷描述",
+              title: "多行输入1",
               isHidden: false,
               isLocked: false,
               props: {
