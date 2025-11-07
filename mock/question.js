@@ -14,6 +14,9 @@ module.exports = [
         data: {
           id: Random.id(),
           titlt: Random.ctitle(),
+          description: Random.cparagraph(3, 5),
+          js: "",
+          css: "",
           //组件列表
           componentList: [
             {
