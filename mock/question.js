@@ -13,7 +13,7 @@ module.exports = [
         // msg: "出错了",
         data: {
           id: Random.id(),
-          titlt: Random.ctitle(),
+          title: Random.ctitle(),
           description: Random.cparagraph(3, 5),
           js: "",
           css: "",
