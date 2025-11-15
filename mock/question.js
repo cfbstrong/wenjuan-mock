@@ -15,6 +15,7 @@ module.exports = [
           id: Random.id(),
           title: Random.ctitle(),
           description: Random.cparagraph(3, 5),
+          isPublished: Random.boolean(),
           js: "",
           css: "",
           //组件列表
