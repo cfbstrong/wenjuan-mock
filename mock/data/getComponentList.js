@@ -4,7 +4,7 @@ const Random = Mock.Random;
 function getComponentList() {
   return [
     {
-      fe_id: Random.id(),
+      fe_id: "c1",
       type: "questionInfo", //不能重复，前后端统一好
       title: "问卷描述",
       isHidden: false,
@@ -15,7 +15,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: "c2",
       type: "questionRadio",
       title: "单选标题",
       isHidden: false,
@@ -42,7 +42,7 @@ function getComponentList() {
     },
     // Title
     {
-      fe_id: Random.id(),
+      fe_id: "c3",
       type: "questionTitle", //组件类型 <a/> <div/> <input/>
       title: "标题",
       isHidden: false,
@@ -55,7 +55,7 @@ function getComponentList() {
     },
     // Input
     {
-      fe_id: Random.id(),
+      fe_id: "c4",
       type: "questionInput", //不能重复，前后端统一好
       title: "输入框1",
       isHidden: false,
@@ -66,7 +66,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: "c5",
       type: "questionInput", //不能重复，前后端统一好
       title: "输入框2",
       isHidden: false,
@@ -77,7 +77,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: "c6",
       type: "questionPragraph", //不能重复，前后端统一好
       title: "段落",
       isHidden: false,
@@ -88,7 +88,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: "c7",
       type: "questionTextarea", //不能重复，前后端统一好
       title: "多行输入1",
       isHidden: false,
