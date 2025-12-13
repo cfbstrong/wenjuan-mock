@@ -98,6 +98,33 @@ function getComponentList() {
         placeholder: "请输入内容111",
       },
     },
+    {
+      fe_id: "c8",
+      type: "questionCheckbox", //不能重复，前后端统一好
+      isHidden: false,
+      isLocked: false,
+      props: {
+        title: "多选标题",
+        vertical: false,
+        list: [
+          {
+            value: "item1",
+            label: "选项1",
+            checked: false,
+          },
+          {
+            value: "item2",
+            label: "选项2",
+            checked: false,
+          },
+          {
+            value: "item3",
+            label: "选项3",
+            checked: false,
+          },
+        ],
+      },
+    },
   ];
 }
 

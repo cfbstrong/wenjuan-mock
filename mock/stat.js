@@ -29,7 +29,7 @@ module.exports = [
           stat: [
             { name: "选项1", count: 20 },
             { name: "选项2", count: 30 },
-            { name: "选项3", count: 50 },
+            { name: "选项3", count: 10 },
           ],
         },
       };
