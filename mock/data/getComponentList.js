@@ -50,7 +50,7 @@ function getComponentList() {
       props: {
         title: "一行标题",
         level: 1,
-        isCenter: false,
+        isCenter: true,
       },
     },
     // Input
@@ -83,7 +83,7 @@ function getComponentList() {
       isHidden: false,
       isLocked: false,
       props: {
-        text: "你的姓名", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
+        text: "一个段落", //目前是默认，一旦前端修改了属性，就会发送请求保存到服务器上，后面服务器返回的就是客户自定义的内容了
         isCenter: true,
       },
     },
@@ -115,7 +115,7 @@ function getComponentList() {
           {
             value: "item2",
             label: "选项2",
-            checked: false,
+            checked: true,
           },
           {
             value: "item3",

@@ -19,6 +19,7 @@ module.exports = [
           js: "",
           css: "",
           isPublished: true,
+          isDeleted: false,
           //组件列表
           componentList: getComponentList(),
         },
